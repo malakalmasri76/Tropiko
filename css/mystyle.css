@@ -1,0 +1,780 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #000000;
+    background-color: #ffffff;
+    margin: 0;
+}
+
+/* start header */
+header {
+    height: 100vh;
+    background-color: #F7F7F7;
+    width: 100%;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 190px;
+    height: 65px;
+    padding: 15px 0px;
+    margin-left: 220px;
+    margin-right: 220px;
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+nav .logo img {
+    width: 45px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-left: auto;
+}
+
+nav ul li {
+    display: inline;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: 400;
+    color: black;
+    cursor: pointer;
+}
+
+/* nav .button{
+    padding-left: 5px;
+} */
+nav .button a {
+    display: inline-block;
+    padding: 10px 0;
+    text-align: center;
+    text-decoration: none;
+    width: 120px;
+    outline: none;
+    background-color: #fc5d35;
+    color: #f7f7f7;
+    border: 1px solid transparent;
+}
+
+.search-icon img {
+    width: 22px;
+}
+
+.menu {
+    display: none;
+}
+
+.banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 190px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.banner-info {
+    width: 50%;
+}
+
+.banner h1 {
+    padding-top: 70px;
+    font-weight: 900;
+    font-size: 60px;
+    width: 90%;
+    line-height: 1.2;
+}
+
+.banner p {
+    margin: 45px 0;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.5;
+    width: 77%;
+}
+
+.banner-img {
+    width: 45%;
+    margin: 0px 20px;
+    padding-top: 70px;
+}
+
+.banner-img img {
+    width: 65%;
+}
+
+.banner .buttons {
+    display: flex;
+    margin: 20px 0;
+}
+
+.banner .shop a {
+    display: inline-block;
+    padding: 10px 0;
+    text-align: center;
+    text-decoration: none;
+    width: 145px;
+    outline: none;
+    background-color: #fc5d35;
+    color: #f7f7f7;
+    border: 1px solid transparent;
+    margin: 0 10px;
+}
+
+.banner .shop a:hover {
+    background-color: white;
+    border: 1px solid #fc5d35;
+    color: #fc5d35;
+}
+
+.banner .content a {
+    display: inline-block;
+    padding: 10px 0;
+    text-align: center;
+    text-decoration: none;
+    width: 145px;
+    outline: none;
+    background-color: #000000;
+    color: #f7f7f7;
+    border: 1px solid transparent;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.banner .content a:hover {
+    background-color: white;
+    border: 1px solid #000000;
+    color: #000000;
+}
+
+.banner .arrow {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    width: 105px;
+    transform: translateY(-50%);
+}
+
+.banner .prev a {
+    display: inline-block;
+    padding: 10px 0;
+    text-align: center;
+    text-decoration: none;
+    width: 45px;
+    outline: none;
+    background-color: #fc5d35;
+    color: #f7f7f7;
+    border: 1px solid transparent;
+    margin: 7px 0;
+
+}
+
+.banner .next a {
+    display: inline-block;
+    padding: 10px 0;
+    text-align: center;
+    text-decoration: none;
+    width: 45px;
+    outline: none;
+    background-color: #000000;
+    color: #f7f7f7;
+    border: 1px solid transparent;
+    margin: 7px 0;
+    cursor: pointer;
+}
+
+@media(max-width:576px) {
+    nav {
+        padding-inline: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    nav ul {
+        width: 100%;
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 2;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .banner {
+        padding-left: 20px;
+        text-align: center;
+    }
+
+    .banner-info {
+        width: 100%;
+    }
+
+    .banner-info h1 {
+        width: 100%;
+        padding-top: 230px;
+        text-align: center;
+    }
+
+    .banner-info p {
+        width: 100%;
+        text-align: center;
+    }
+
+    .banner-img {
+        position: absolute;
+        top: 780px;
+        right: -16px;
+        z-index: 2;
+        width: 100%;
+    }
+
+    .banner-img img {
+        width: 80%;
+    }
+
+    .buttons {
+        position: relative;
+        left: 100px;
+    }
+
+    .banner .arrow {
+        flex-direction: row;
+        position: absolute;
+        top: 93%;
+        left: 40%;
+        justify-content: space-between;
+    }
+}
+
+/* end header */
+
+/* start our services section */
+.Our-Services {
+    position: relative;
+    text-align: center;
+    padding-top: 75px;
+    padding-bottom: 70px;
+    width: 100%;
+}
+
+.Our-Services h2 {
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 1.2;
+}
+
+.Our-Services p {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.Our-Services .card {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    column-gap: 30px;
+    padding-inline: 190px;
+    padding-top: 60px;
+    padding-bottom: 50px;
+}
+
+.Our-Services .card .item {
+    border: 1px solid #EBEBEB;
+    width: 340px;
+    height: 330px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.Our-Services .card .item:hover {
+    border-top: 7px solid #fc5d35;
+}
+
+.Our-Services .card .item img {
+    width: 45px;
+    padding-top: 45px;
+}
+
+.Our-Services .card .item h3 {
+    color: #fc5d35;
+    font-weight: lighter;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.Our-Services .card .item p {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.Our-Services .read-more a {
+    display: inline-block;
+    padding: 10px 0;
+    text-align: center;
+    text-decoration: none;
+    width: 145px;
+    outline: none;
+    background-color: #000000;
+    color: #f7f7f7;
+    border: 1px solid transparent;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.Our-Services .read-more a:hover {
+    background-color: white;
+    border: 1px solid #000000;
+    color: #000000;
+}
+
+@media(max-width:576px) {
+    .Our-Services p {
+        padding: 0 10px;
+    }
+
+    .Our-Services .card {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+        row-gap: 30px;
+        padding-inline: 20px;
+
+    }
+
+    .Our-Services .card .item {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+/* end our services section */
+
+/* strart Fresh Fruits section */
+.Fresh-Fruits {
+    position: relative;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 75px;
+    width: 100%;
+}
+
+.Fresh-Fruits h2 {
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 1.2;
+}
+
+.Fresh-Fruits p {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.5;
+
+}
+
+.Fresh-Fruits .box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-inline: 190px;
+}
+
+.Fresh-Fruits .box .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.Fresh-Fruits .box .col {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: left;
+    width: 720px;
+}
+
+.Fresh-Fruits .box .row h3 {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 1.2;
+    margin-top: 70px;
+}
+
+.Fresh-Fruits .box .row p {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.5;
+    padding-bottom: 20px;
+}
+
+.Fresh-Fruits .buy-now a {
+    display: inline-block;
+    padding: 10px 0;
+    text-align: center;
+    text-decoration: none;
+    width: 145px;
+    outline: none;
+    background-color: #000000;
+    color: #f7f7f7;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.Fresh-Fruits .buy-now a:hover {
+    background-color: white;
+    border: 1px solid #000000;
+    color: #000000;
+}
+
+.Fresh-Fruits .box .row .img {
+    align-items: center;
+    margin-left: 160px;
+}
+
+.Fresh-Fruits .box .row img {
+    width: 250px;
+    position: relative;
+    top: 100px;
+}
+
+@media(max-width:576px) {
+    .Fresh-Fruits .box {
+        padding-inline: 20px;
+    }
+
+    .Fresh-Fruits .box .row {
+        flex-direction: column;
+    }
+
+    .Fresh-Fruits .box .col {
+        text-align: center;
+        width: 100%;
+    }
+
+    .Fresh-Fruits .box .row img {
+        position: relative;
+        top: 45px;
+        right: 80px;
+    }
+
+    .Fresh-Fruits .box .row .img- img {
+        left: -17;
+    }
+}
+
+/* end Fresh Fruits section */
+
+/* start Tasty section */
+.Tasty {
+    width: 100%;
+    height: 500px;
+    background-image: url(../img/tasty-image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.Tasty .text {
+    color: white;
+    font-size: 80px;
+    font-weight: 900;
+    padding-top: 50px;
+}
+
+@media(max-width:576px) {
+    .Tasty .text {
+        text-align: center;
+        font-size: 50px;
+    }
+}
+
+/* end Tasty section */
+
+/* start Testimonial section */
+.Testimonial {
+    position: relative;
+    text-align: center;
+    padding-bottom: 75px;
+    width: 100%;
+}
+
+.Testimonial h2 {
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 1.2;
+}
+
+.Testimonial p {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.5;
+
+}
+
+.Testimonial .client {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-inline: 190px;
+    width: 1130px;
+}
+
+.Testimonial .client img {
+    width: 350px;
+}
+
+.Testimonial .client h3 {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.2;
+}
+
+.Testimonial .client p {
+    font-size: 21px;
+    font-weight: 200;
+    line-height: 1.5;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+.Testimonial .arrow {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.Testimonial .arrow a {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #292727;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.Testimonial .arrow a:hover {
+    background-color: #fc5d35;
+}
+
+.Testimonial .arrow a img {
+    padding-top: 15px;
+}
+
+@media(max-width:576px) {
+    .Testimonial .client {
+        padding-inline: 2px;
+        width: 100%;
+    }
+
+    .Testimonial .client p {
+        padding-left: 5px;
+    }
+}
+
+/* end Testimonial section */
+
+/* start Contact Us section */
+.Contact-Us {
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 75px;
+    width: 100%;
+    background-image: url(../img/orange-dish.png);
+    background-repeat: no-repeat;
+    background-size: 215px;
+    background-position: right center;
+}
+
+.Contact-Us form {
+    text-align: left;
+    padding-inline: 190px;
+}
+
+.Contact-Us h3 {
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 1.2;
+}
+
+.Contact-Us form input {
+    border: none;
+    border-bottom: 0.8px solid #252525;
+    width: 60%;
+    margin: 10px 0;
+    padding: 7px;
+}
+
+.Contact-Us .massage {
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+
+.Contact-Us button {
+    border: none;
+    background-color: #fc5d35;
+    color: #fff;
+    padding: 8px 40px;
+    font-size: 14px;
+}
+
+@media(max-width:576px) {
+    .Contact-Us form {
+        padding-inline: 25px;
+    }
+}
+
+/* end Contact Us section */
+
+/* start info section */
+.info {
+    position: relative;
+    padding-top: 75px;
+    padding-bottom: 100px;
+    width: 100%;
+}
+
+.info .contaner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding-inline: 190px;
+    justify-content: space-between;
+}
+
+.info .contaner .col {
+    width: 130px;
+    text-align: left;
+}
+
+.info .contaner .col h5 {
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: lighter;
+}
+
+.info .contaner .col p {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.info .contaner .icons {
+    display: flex;
+    flex-direction: row;
+}
+
+.info .contaner .icons img {
+    width: 35px;
+    margin-bottom: 20px;
+    padding-right: 10px;
+}
+
+.info .contaner form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start
+}
+
+.info .contaner .Follow-Us h5 {
+    margin-bottom: 12px;
+    font-size: 22px;
+    font-weight: lighter;
+}
+
+.info .contaner .Follow-Us form label {
+    margin-bottom: 12px;
+    font-size: 22px;
+    font-weight: lighter;
+}
+
+.info .contaner .Follow-Us form input {
+    width: 225px;
+    height: 30px;
+}
+
+.info .contaner .Follow-Us form button {
+    border: none;
+    background-color: #fc5d35;
+    color: #fff;
+    padding: 8px 40px;
+    font-size: 14px;
+    margin-top: 25px;
+}
+
+@media(max-width:576px) {
+    .info .contaner {
+        flex-wrap: wrap;
+    }
+
+    .info .contaner .col {
+        width: 100%;
+        text-align: center;
+    }
+
+    .Follow-Us {
+        width: 100%;
+        text-align: center;
+    }
+
+    .info .contaner .icons img {
+        width: 80%;
+    }
+    .info .contaner form{
+        align-items: center;
+
+    }
+}
+/* end info section */
+
+/* start footer */
+footer {
+    position: relative;
+    width: 100%;
+    background-color: #EFEDED;
+    text-align: center;
+    height: 60px;
+
+}
+
+footer p {
+    padding: 15px 0;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+/* end footer */
